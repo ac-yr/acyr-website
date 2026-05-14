@@ -10,7 +10,7 @@ export default function Terms() {
     <main className="bg-surface-primary pb-24">
       <section className="max-w-3xl mx-auto px-8 pt-20">
         <Link
-          to="/site"
+          to="/"
           className="kol-back-link kol-helper-xs uppercase tracking-widest text-body hover:text-emphasis no-underline inline-flex items-center gap-1.5"
           style={{ marginBottom: '32px' }}
         >
@@ -39,7 +39,7 @@ export default function Terms() {
           <p>Prices on the site are in EUR including any applicable VAT. International orders may incur duties or taxes at the destination, which are the customer's responsibility.</p>
 
           <h2>Returns</h2>
-          <p>See our <Link to="/site/shipping-returns">shipping and returns</Link> page for the full return policy.</p>
+          <p>See our <Link to="/shipping-returns">shipping and returns</Link> page for the full return policy.</p>
 
           <h2>Intellectual property</h2>
           <p>All photography, prints, and editorial copy on this site are the property of {BRAND_INFO.identity.name} or its photographers. Reproduction without permission is not permitted.</p>

@@ -7,17 +7,12 @@ import { CartProvider, useCart } from './CartContext'
 import '../../brand/kol-brand-typography.css'
 
 const NAV_LEFT = [
-  { label: 'Shop',        to: '/site/shop' },
-  { label: 'Handmade',    to: '/site/handmade' },
-  { label: 'Collections', to: '/site/collections' },
-  { label: 'Journal',     to: '/site/blog' },
-  { label: 'About',       to: '/site/about' },
-  { label: 'Contact',     to: '/site/contact' },
-]
-
-const NAV_RIGHT = [
-  { label: 'Styleguide', to: '/styleguide' },
-  { label: 'Gallery',    to: '/gallery' },
+  { label: 'Shop',        to: '/shop' },
+  { label: 'Handmade',    to: '/handmade' },
+  { label: 'Collections', to: '/collections' },
+  { label: 'Journal',     to: '/blog' },
+  { label: 'About',       to: '/about' },
+  { label: 'Contact',     to: '/contact' },
 ]
 
 const iconBtnStyle = {
@@ -51,7 +46,7 @@ const cartBadgeStyle = {
 function CartIcon() {
   const { itemCount } = useCart()
   return (
-    <Link to="/site/cart" aria-label={`Cart (${itemCount})`} style={iconBtnStyle} className="kol-site-nav-link">
+    <Link to="/cart" aria-label={`Cart (${itemCount})`} style={iconBtnStyle} className="kol-site-nav-link">
       <Icon name="shopping-bag" size={16} />
       {itemCount > 0 && <span style={cartBadgeStyle}>{itemCount}</span>}
     </Link>
@@ -73,8 +68,7 @@ function SiteShell() {
         variant="center"
         leftLinks={NAV_LEFT}
         logo="Another Creation"
-        logoTo="/site"
-        rightLinks={NAV_RIGHT}
+        logoTo="/"
         rightActions={
           <>
             <span style={{ color: 'var(--kol-surface-on-primary)', display: 'flex', alignItems: 'center' }}>

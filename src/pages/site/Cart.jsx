@@ -51,7 +51,7 @@ export default function Cart() {
         {items.length === 0 ? (
           <div className="kol-prose">
             <p>Your cart is empty.</p>
-            <p>Browse the <Link to="/site/shop">shop</Link> or the <Link to="/site/handmade">handmade</Link> pieces.</p>
+            <p>Browse the <Link to="/shop">shop</Link> or the <Link to="/handmade">handmade</Link> pieces.</p>
           </div>
         ) : (
           <div className="grid gap-12 lg:grid-cols-[1fr_320px] items-start">
@@ -104,7 +104,7 @@ export default function Cart() {
                 </p>
               </div>
               <div className="mt-6">
-                <Button variant="primary" size="lg" className="w-full" onClick={() => navigate('/site/checkout')}>
+                <Button variant="primary" size="lg" className="w-full" onClick={() => navigate('/checkout')}>
                   Checkout
                 </Button>
               </div>

@@ -18,7 +18,7 @@ export default function BlogArticle() {
       <main className="bg-surface-primary max-w-3xl mx-auto px-8 py-24 text-center">
         <p className="kol-prose-label">404</p>
         <h1 className="kol-prose-display-md">Article not found.</h1>
-        <Link to="/site/blog" className="kol-prose-label" style={{ marginBottom: 0 }}>← Back to journal</Link>
+        <Link to="/blog" className="kol-prose-label" style={{ marginBottom: 0 }}>← Back to journal</Link>
       </main>
     )
   }
@@ -33,7 +33,7 @@ export default function BlogArticle() {
 
       <div className="max-w-3xl mx-auto px-8">
         <Link
-          to="/site/blog"
+          to="/blog"
           className="kol-back-link kol-helper-xs uppercase tracking-widest text-body hover:text-emphasis no-underline inline-flex items-center gap-1.5"
           style={{ marginBottom: '32px' }}
         >

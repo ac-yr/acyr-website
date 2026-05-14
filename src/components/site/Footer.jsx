@@ -3,10 +3,10 @@ import KolLogo from '../../brand/logos/KolLogo'
 import { BRAND_INFO } from '../../brand/data/info'
 
 const BROWSE = [
-  { label: 'Shop',         to: '/site/shop' },
-  { label: 'Handmade',     to: '/site/handmade' },
-  { label: 'Collections',  to: '/site/collections' },
-  { label: 'Journal',      to: '/site/blog' },
+  { label: 'Shop',         to: '/shop' },
+  { label: 'Handmade',     to: '/handmade' },
+  { label: 'Collections',  to: '/collections' },
+  { label: 'Journal',      to: '/blog' },
   { label: 'About',        to: null },
 ]
 
@@ -16,9 +16,9 @@ const SOCIAL = [
 ]
 
 const LEGAL = [
-  { label: 'Shipping & Returns', to: '/site/shipping-returns' },
-  { label: 'Terms',              to: '/site/terms' },
-  { label: 'Privacy',            to: '/site/privacy' },
+  { label: 'Shipping & Returns', to: '/shipping-returns' },
+  { label: 'Terms',              to: '/terms' },
+  { label: 'Privacy',            to: '/privacy' },
 ]
 
 function FooterLink({ label, to, href }) {

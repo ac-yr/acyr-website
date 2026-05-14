@@ -100,7 +100,7 @@ export default function CollectionDetail() {
       <main className="bg-surface-primary max-w-3xl mx-auto px-8 py-24 text-center">
         <p className="kol-prose-label">404</p>
         <h1 className="kol-prose-display-md">Collection not found.</h1>
-        <Link to="/site/collections" className="kol-prose-label" style={{ marginBottom: 0 }}>← Back to collections</Link>
+        <Link to="/collections" className="kol-prose-label" style={{ marginBottom: 0 }}>← Back to collections</Link>
       </main>
     )
   }
@@ -123,7 +123,7 @@ export default function CollectionDetail() {
 
       <section className="max-w-3xl mx-auto px-8 pt-20 pb-12">
         <Link
-          to="/site/collections"
+          to="/collections"
           className="kol-back-link kol-helper-xs uppercase tracking-widest text-body hover:text-emphasis no-underline inline-flex items-center gap-1.5"
           style={{ marginBottom: '32px' }}
         >

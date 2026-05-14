@@ -101,7 +101,7 @@ export default function Checkout() {
       <main className="bg-surface-primary max-w-3xl mx-auto px-8 py-24 text-center">
         <p className="kol-prose-label">Checkout</p>
         <h1 className="kol-prose-display-md">Your cart is empty.</h1>
-        <Link to="/site/shop" className="kol-back-link kol-helper-xs uppercase tracking-widest text-body hover:text-emphasis no-underline">← Back to shop</Link>
+        <Link to="/shop" className="kol-back-link kol-helper-xs uppercase tracking-widest text-body hover:text-emphasis no-underline">← Back to shop</Link>
       </main>
     )
   }

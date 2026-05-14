@@ -30,7 +30,7 @@ export default function OrderConfirmation() {
       <main className="bg-surface-primary max-w-3xl mx-auto px-8 py-24 text-center">
         <p className="kol-prose-label">Confirmation</p>
         <h1 className="kol-prose-display-md">No order found.</h1>
-        <Link to="/site/shop" className="kol-back-link kol-helper-xs uppercase tracking-widest text-body hover:text-emphasis no-underline">← Back to shop</Link>
+        <Link to="/shop" className="kol-back-link kol-helper-xs uppercase tracking-widest text-body hover:text-emphasis no-underline">← Back to shop</Link>
       </main>
     )
   }
@@ -118,7 +118,7 @@ export default function OrderConfirmation() {
       )}
 
       <section className="max-w-3xl mx-auto px-8 pt-16 text-center">
-        <Button variant="outline" size="md" onClick={() => navigate('/site/shop')}>Continue shopping →</Button>
+        <Button variant="outline" size="md" onClick={() => navigate('/shop')}>Continue shopping →</Button>
       </section>
     </main>
   )

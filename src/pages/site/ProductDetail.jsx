@@ -58,13 +58,13 @@ export default function ProductDetail() {
       <main className="bg-surface-primary max-w-3xl mx-auto px-8 py-24 text-center">
         <p className="kol-prose-label">404</p>
         <h1 className="kol-prose-display-md">Product not found.</h1>
-        <Link to="/site/shop" className="kol-back-link kol-helper-xs uppercase tracking-widest text-body hover:text-emphasis no-underline">← Back to shop</Link>
+        <Link to="/shop" className="kol-back-link kol-helper-xs uppercase tracking-widest text-body hover:text-emphasis no-underline">← Back to shop</Link>
       </main>
     )
   }
 
   const isPod      = product.kind === 'pod'
-  const indexHref  = isPod ? '/site/shop' : '/site/handmade'
+  const indexHref  = isPod ? '/shop' : '/handmade'
   const indexLabel = isPod ? 'shop' : 'handmade'
   const desc       = product.description ?? null
 
@@ -141,7 +141,7 @@ export default function ProductDetail() {
                   >
                     {added ? 'Added to cart ✓' : 'Add to cart'}
                   </Button>
-                  <Button variant="outline" size="lg" className="w-full" onClick={() => navigate('/site/cart')}>
+                  <Button variant="outline" size="lg" className="w-full" onClick={() => navigate('/cart')}>
                     View cart
                   </Button>
                 </>

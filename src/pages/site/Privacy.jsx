@@ -10,7 +10,7 @@ export default function Privacy() {
     <main className="bg-surface-primary pb-24">
       <section className="max-w-3xl mx-auto px-8 pt-20">
         <Link
-          to="/site"
+          to="/"
           className="kol-back-link kol-helper-xs uppercase tracking-widest text-body hover:text-emphasis no-underline inline-flex items-center gap-1.5"
           style={{ marginBottom: '32px' }}
         >
