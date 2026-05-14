@@ -51,7 +51,7 @@ export default function BlogArticle() {
           <Divider className="pt-4" />
           <div className="kol-prose-label flex items-center gap-3 flex-wrap pt-4" style={{ marginBottom: 0 }}>
             {author && (
-              <Link to={`/site/blog/author/${author.slug}`} className="inline-flex items-center gap-2.5 no-underline text-meta hover:text-emphasis">
+              <Link to={`/blog/author/${author.slug}`} className="inline-flex items-center gap-2.5 no-underline text-meta hover:text-emphasis">
                 <Avatar initial={author.avatarInitial} size="sm" />
                 <span>{author.name}</span>
               </Link>
@@ -67,7 +67,7 @@ export default function BlogArticle() {
 
         {author && (
           <aside className="mt-20 p-8 rounded border border-fg-08 bg-surface-secondary">
-            <Link to={`/site/blog/author/${author.slug}`} className="flex gap-5 no-underline hover:opacity-80 transition-opacity">
+            <Link to={`/blog/author/${author.slug}`} className="flex gap-5 no-underline hover:opacity-80 transition-opacity">
               <Avatar initial={author.avatarInitial} size="lg" />
               <div className="min-w-0 flex-1">
                 <p className="kol-prose-label" style={{ marginBottom: '8px' }}>{author.role}</p>

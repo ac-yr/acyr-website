@@ -43,7 +43,7 @@ export default function Blog() {
                 {i > 0 && <Divider />}
                 <li>
                   <Link
-                    to={`/site/blog/${article.slug}`}
+                    to={`/blog/${article.slug}`}
                     className="grid gap-8 py-12 sm:grid-cols-[280px_1fr] no-underline hover:opacity-80 transition-opacity"
                   >
                     {article.cover && (

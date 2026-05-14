@@ -80,7 +80,7 @@ export default function Handmade() {
           {products.map((p) => (
             <li key={p.slug}>
               <ProductCard
-                to={`/site/handmade/${p.slug}`}
+                to={`/handmade/${p.slug}`}
                 src={p.image}
                 label={p.name}
                 name={p.name}

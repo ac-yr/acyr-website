@@ -273,7 +273,7 @@ export default function CollectionDetail() {
         <Divider />
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 pt-12">
           {prev ? (
-            <Link to={`/site/collections/${prev.slug}`} className="block no-underline">
+            <Link to={`/collections/${prev.slug}`} className="block no-underline">
               <p className="kol-prose-label" style={{ marginBottom: '8px' }}>← Previous</p>
               <div className="kol-prose">
                 <p style={{ margin: '0 0 4px' }}>{prev.title} · {prev.year}</p>
@@ -282,7 +282,7 @@ export default function CollectionDetail() {
             </Link>
           ) : <span />}
           {next ? (
-            <Link to={`/site/collections/${next.slug}`} className="block no-underline text-right">
+            <Link to={`/collections/${next.slug}`} className="block no-underline text-right">
               <p className="kol-prose-label" style={{ marginBottom: '8px' }}>Next →</p>
               <div className="kol-prose">
                 <p style={{ margin: '0 0 4px' }}>{next.title} · {next.year}</p>

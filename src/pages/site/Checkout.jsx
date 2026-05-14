@@ -228,7 +228,7 @@ export default function Checkout() {
                         placedAt: new Date().toISOString(),
                       }
                       try { window.localStorage.setItem('kol.ac.lastOrder', JSON.stringify(order)) } catch { /* no-op */ }
-                      navigate(`/site/checkout/confirmation?id=${order.id}`)
+                      navigate(`/checkout/confirmation?id=${order.id}`)
                     }}
                   >
                     Place order

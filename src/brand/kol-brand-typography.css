@@ -2,7 +2,7 @@
  * kol-brand-typography.css — AC brand typography for the marketing site.
  *
  * Loaded ONLY by `src/components/site/SiteLayout.jsx` — applies once a
- * `/site/*` route mounts and stays loaded for the rest of the session.
+ * site route mounts and stays loaded for the rest of the session.
  * Adds:
  *   - Right Grotesk Mono @font-face blocks (brand mono)
  *   - --kol-text-helper-{xs,xxs,s} tokens

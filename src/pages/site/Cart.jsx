@@ -60,14 +60,14 @@ export default function Cart() {
                 <li key={it.id}>
                   {i > 0 && <Divider />}
                   <div className="grid gap-4 grid-cols-[60px_1fr_auto] sm:grid-cols-[80px_1fr_auto] items-start py-6">
-                    <Link to={`/site/${it.kind === 'pod' ? 'shop' : 'handmade'}/${it.slug}`} className="block">
+                    <Link to={`/${it.kind === 'pod' ? 'shop' : 'handmade'}/${it.slug}`} className="block">
                       <div className="w-[60px] sm:w-20 aspect-[3/4] rounded overflow-hidden bg-surface-secondary">
                         <img src={it.image} alt={it.name} className="w-full h-full object-cover" />
                       </div>
                     </Link>
                     <div>
                       <Link
-                        to={`/site/${it.kind === 'pod' ? 'shop' : 'handmade'}/${it.slug}`}
+                        to={`/${it.kind === 'pod' ? 'shop' : 'handmade'}/${it.slug}`}
                         className="kol-prose-label no-underline text-emphasis hover:text-emphasis"
                         style={{ marginBottom: '4px' }}
                       >

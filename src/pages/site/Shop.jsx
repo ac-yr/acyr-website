@@ -18,7 +18,7 @@ function ShopGrid({ items }) {
       {items.map((p) => (
         <li key={p.slug}>
           <ProductCard
-            to={`/site/shop/${p.slug}`}
+            to={`/shop/${p.slug}`}
             src={p.image}
             label={p.name}
             name={p.name}

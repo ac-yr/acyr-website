@@ -37,7 +37,7 @@ export default function Collections() {
           {collections.map((collection) => (
             <li key={collection.slug}>
               <Link
-                to={`/site/collections/${collection.slug}`}
+                to={`/collections/${collection.slug}`}
                 className="block no-underline group"
               >
                 <div className="aspect-[3/4] rounded overflow-hidden bg-surface-secondary mb-6">
