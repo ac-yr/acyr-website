@@ -2,7 +2,6 @@ import { useState, useMemo, useRef, useEffect } from 'react'
 import Tag from './Tag'
 import Divider from '../atoms/Divider'
 import Icon from '../loaders/icons/Icon'
-import ViewToggle from './ViewToggle'
 
 /**
  * ContentFilters — universal filter component for content grids.
